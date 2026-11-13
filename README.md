@@ -217,3 +217,4 @@ An empirical 5-client, 5-round Federated Averaging experiment was conducted usin
 1. **Dataset Schema Compatibility**: Live inference with `mlp_model.pth` is explicitly constrained to datasets adhering to the CIC IoT 2023 39-feature schema. Incompatible datasets (Edge-IIoTset, N-IoT) are validated at ingestion but protected against invalid inference by the Dataset Adapter registry.
 2. **Batch Flow vs. Live Network Sniffing**: SentinelFL performs memory-safe chunked batch classification on ingested network flow CSVs. Live continuous packet capture (direct Zeek/libpcap daemon tapping physical interfaces) requires local interface privileges and is not simulated as fake live streaming.
 3. **Tabular Classical Baselines**: Dedicated Random Forest and Logistic Regression scripts are maintained as independent reference benchmarks in `experiments/`, while the primary production inference engine is the verified 7-class PyTorch FLMLP.
+<!-- Deployment trigger -->
