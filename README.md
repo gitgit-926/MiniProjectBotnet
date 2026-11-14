@@ -210,7 +210,7 @@ An empirical 5-client, 5-round Federated Averaging experiment was conducted usin
 - **Final Checkpoint**: `ml/artifacts/global_model_final.pt`
 - **Standalone Verification**: Successfully loaded into a fresh PyTorch session and evaluated on holdout test partition: Loss = 0.00187, Accuracy = 100.00%.
 
----
+--
 
 ## 8. Current Scope & Known Boundaries
 
